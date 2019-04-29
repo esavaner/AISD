@@ -97,6 +97,10 @@ void queue::priority(int value, int prio) {
 
 void queue::print() {
     node *p = head;
+    if(!p) {
+        cout << "Empty" << endl;
+        return;
+    }
     while(p->next || p == tail) {
         cout << "(" << p->value << ", " << p->prio << ") ";
         if(p != tail)
@@ -106,4 +110,3 @@ void queue::print() {
     }
     cout << endl;
 }
-

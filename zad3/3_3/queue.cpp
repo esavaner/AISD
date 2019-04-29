@@ -21,7 +21,7 @@ void queue::insert(edge e) {
     while(i && (heap[j].w > e.w)) {
         heap[i] = heap[j];
         i = j;
-        j = (int)(i - 1) >> 1;
+        j = (i - 1) >> 1;
     }
     heap[i] = e;
 }
@@ -41,5 +41,3 @@ void queue::pop() {
         heap[i] = e;
     }
 }
-
-

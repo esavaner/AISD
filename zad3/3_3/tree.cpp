@@ -45,11 +45,11 @@ void tree::print() {
     treenode *p;
     cout << endl;
     for(i = 0; i <= treeLength; i++) {
-        cout << "Vertex " << i << " - ";
-        for(p = treeList[i]; p; p = p->next) cout << p->v << ":" << p->weight << " ";
+        for(p = treeList[i]; p; p = p->next)
+            cout << i << "-" << p->v << " w:" << p->weight << " ";
         cout << endl;
     }
-    cout << endl << endl << "Minimalne drzewo rozpinajace = " << weight << endl << endl;
+    cout << endl << "Minimalne drzewo rozpinajace: " << weight << endl;
 }
 
 treenode * tree::getNode(int n) {

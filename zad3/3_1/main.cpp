@@ -28,7 +28,8 @@ int main() {
             Q.priority(x, p);
         } else if (s == "print") {
             Q.print();
-        }
+        } else
+            cout << "Nie ma takiej operacji" << endl;
     }
     return 0;
 }

@@ -1,5 +1,5 @@
-#ifndef ZAD3_D_QUEUE_H
-#define ZAD3_D_QUEUE_H
+#ifndef ZAD3_2_QUEUE_H
+#define ZAD3_2_QUEUE_H
 
 struct node {
     node *next;
@@ -23,4 +23,4 @@ public:
     void print(void);
 };
 
-#endif //ZAD3_D_QUEUE_H
+#endif //ZAD3_2_QUEUE_H
